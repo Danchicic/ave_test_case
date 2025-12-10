@@ -2,9 +2,9 @@ from fastapi import HTTPException, status, APIRouter
 from fastapi.params import Depends
 from redis.asyncio import Redis
 
-from app.redis_service import get_redis, get_phone_key
-from app.documentation import PhoneAddressSchema
-from app.schemas import PhoneAddressResponse
+from application.redis_service import get_redis, get_phone_key
+from application.schemas import PhoneAddressSchema
+from application.response_schemas import PhoneAddressResponse
 
 router = APIRouter(prefix='/api/phones')
 

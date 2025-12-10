@@ -2,7 +2,7 @@ import logging
 
 import uvicorn
 from fastapi import FastAPI
-from app.routes import router
+from application.routes import router
 
 logging.basicConfig(
     level=logging.INFO,
